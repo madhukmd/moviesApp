@@ -56,7 +56,6 @@ class Login extends Component {
     if (jwtToken !== undefined) {
       return <Redirect to="/" />
     }
-
     return (
       <div className="input-container">
         <label htmlFor="username" className="input-label">
