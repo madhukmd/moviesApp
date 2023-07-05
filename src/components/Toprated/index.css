@@ -1,0 +1,50 @@
+.slick-container {
+  max-width: 1085px;
+  margin: auto;
+  padding-left: 20px;
+  padding-right: 27px;
+}
+.slick-next:before,
+.slick-prev:before {
+  font-size: 20px;
+}
+.slick-arrow:before,
+.slick-arrow:before {
+  color: red;
+}
+/* * {
+  border: 1px solid orange;
+} */
+.failure-container {
+  background-color: #0d0d0d;
+  width: 1020px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.error-m {
+  color: #fff;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.error-btn {
+  display: flex;
+  padding: 4px 16px;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  color: #171f46;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+}
+.error-image {
+  width: 48px;
+  height: 48px;
+}

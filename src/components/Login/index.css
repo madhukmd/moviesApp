@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@200;300&display=swap');
+
+.Login-bg-container {
+  background-image: url('https://res.cloudinary.com/dtpjzzexl/image/upload/v1688305845/netfilx_1_j5xubj.png');
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 576px) {
+  .Login-bg-container {
+    background: #131313;
+  }
+}
+
+.movies-logo {
+  width: 150px;
+  height: 40px;
+  top: 20px;
+  left: 100px;
+  position: absolute;
+  margin-bottom: 40px;
+}
+
+@media screen and (max-width: 1050px) {
+  .movies-logo {
+    width: 120px;
+    left: 50px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .movies-logo {
+    width: 100px;
+    height: 30px;
+  }
+}
+
+.login-heading {
+  color: #fff;
+  text-align: center;
+  font-size: 32px;
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 40px;
+  margin: 40px;
+}
+.login-form-container {
+  width: 450px;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 34px;
+  padding-right: 34px;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 576px) {
+  .login-form-container {
+    width: 90%;
+  }
+}
+
+.input-container {
+  width: 100%;
+  height: 68px;
+}
+
+.username-password-field {
+  outline: none;
+  border: none;
+  width: 100%;
+  height: 40px;
+  border-radius: 2px;
+  background-color: #333333;
+  padding-left: 16px;
+  color: #e2e8f0;
+  font-size: 14px;
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-weight: 400;
+  line-height: 24px;
+}
+.input-label {
+  color: #fff;
+  font-size: 13px;
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0.12px;
+  text-transform: uppercase;
+}
+/* 
+* {
+  border: 1px solid red;
+} */
+.login-button {
+  display: flex;
+  width: 100%;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  background-color: #e50914;
+  border: none;
+  outline: none;
+  color: #f8fafc;
+  font-size: 14px;
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-weight: 700;
+  line-height: 24px;
+  margin: 48px;
+  border-radius: 3px;
+}
+.error-message {
+  color: var(--light-red-600, #dc2626);
+  font-size: 14px;
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+  align-self: flex-start;
+}

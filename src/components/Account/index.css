@@ -1,0 +1,99 @@
+.account {
+  background-color: #131313;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.account-container {
+  background-color: #fff;
+  padding-top: 30px;
+  flex-grow: 1;
+}
+.account-heading {
+  color: #131313;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.a-container {
+  width: 90%;
+  max-width: 1020px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+.line {
+  width: 100%;
+  border: 1px solid #cbd5e1;
+}
+.membership-details {
+  display: flex;
+  align-items: flex-start;
+}
+.membership-heading {
+  color: #94a3b8;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 0;
+  margin-right: 20px;
+  width: 180px;
+}
+
+.mail {
+  color: #1e293b;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 0;
+}
+.password {
+  color: #64748b;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.spa {
+  color: #64748b;
+}
+
+.premium {
+  display: flex;
+  align-items: center;
+}
+.mar {
+  margin: 0;
+  color: #1e293b;
+  border: 1px solid #1e293b;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  padding: 0 3px;
+}
+.margin {
+  margin-right: 10px;
+}
+
+.logout-btn {
+  display: inline-flex;
+  padding: 8px 20px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 4px;
+  background: #e50914;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  margin: 50px 0px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  align-self: center;
+  border: none;
+  outline: none;
+}

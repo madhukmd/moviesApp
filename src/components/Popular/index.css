@@ -1,0 +1,24 @@
+* {
+  font-family: 'Hanken Grotesk', sans-serif;
+  /* border: 1px solid red; */
+}
+
+.Search-container {
+  background-color: #131313;
+  min-height: 100vh;
+}
+.load-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.search-movies-container {
+  width: 90%;
+  max-width: 1060px;
+  padding-left: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin: auto;
+}

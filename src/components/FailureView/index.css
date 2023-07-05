@@ -1,0 +1,31 @@
+* {
+  font-family: 'Hanken Grotesk', sans-serif;
+  color: #fff;
+  /* border: 1px solid red; */
+}
+
+.failure-img {
+  width: 375;
+  height: 276px;
+}
+.failure-view {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+.failure-text {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 31px;
+}
+.retry-btn {
+  display: flex;
+  padding: 12px 24px;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  color: #171f46;
+  font-weight: 900;
+}

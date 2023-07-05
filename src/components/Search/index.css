@@ -1,0 +1,42 @@
+* {
+  font-family: 'Hanken Grotesk', sans-serif;
+  /* border: 1px solid red; */
+}
+
+.Search-container {
+  background-color: #131313;
+  min-height: 100vh;
+}
+.load-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.search-movies-container {
+  width: 90%;
+  max-width: 1060px;
+  padding-left: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin: auto;
+}
+.no-results {
+  color: #fff;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.no-results-img {
+  width: 400px;
+  height: 300px;
+}
+.no-results-view {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}

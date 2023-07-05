@@ -1,0 +1,24 @@
+.slick-card {
+  width: 220px;
+  height: 190px;
+  border-radius: 8px;
+  margin: 15px;
+  list-style: none;
+}
+.slick-image-fit {
+  width: 100%;
+  height: 190px;
+  border-radius: 8px;
+  flex-shrink: 0.5;
+}
+
+@media screen and (max-width: 768px) {
+  .slick-card {
+    width: 90px;
+    height: 100px;
+  }
+  .slick-image-fit {
+    height: 100%;
+    width: 100px;
+  }
+}
