@@ -39,7 +39,11 @@
   line-height: normal;
   margin: 0;
   margin-right: 20px;
-  width: 180px;
+}
+@media screen and (min-width: 768px) {
+  .membership-heading {
+    width: 180px;
+  }
 }
 
 .mail {
@@ -75,6 +79,7 @@
   line-height: normal;
   padding: 0 3px;
 }
+
 .margin {
   margin-right: 10px;
 }
@@ -96,4 +101,24 @@
   align-self: center;
   border: none;
   outline: none;
+}
+@media screen and (max-width: 768px) {
+  .account-heading {
+    font-size: 24px;
+  }
+  .membership-heading {
+    font-size: 19px;
+  }
+  .mail {
+    font-size: 18px;
+  }
+  .para {
+    font-size: 16px;
+  }
+  .mar {
+    font-size: 14px;
+  }
+  .premium {
+    margin-left: 12px;
+  }
 }

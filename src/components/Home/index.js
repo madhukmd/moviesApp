@@ -107,11 +107,8 @@ class Home extends Component {
     return (
       <div className="home-container">
         {this.renderBannerContainer()}
-        <h1 className="heading">Trending Now</h1>
         <TrendingNow />
-        <h1 className="heading">Top Rated</h1>
         <Toprated />
-        <h1 className="heading">Originals</h1>
         <Originals />
         <Footer />
       </div>

@@ -12,7 +12,28 @@
   flex-shrink: 0.5;
 }
 
+@media screen and (max-width: 810px) {
+  .slick-card {
+    width: 160px;
+    height: 140px;
+  }
+  .slick-image-fit {
+    height: 100%;
+    width: 190px;
+  }
+}
+
 @media screen and (max-width: 768px) {
+  .slick-card {
+    width: 180px;
+    height: 150px;
+  }
+  .slick-image-fit {
+    height: 100%;
+    width: 190px;
+  }
+}
+@media screen and (max-width: 700px) {
   .slick-card {
     width: 90px;
     height: 100px;

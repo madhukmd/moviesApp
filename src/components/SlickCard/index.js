@@ -21,14 +21,14 @@ const settings = {
       },
     },
     {
-      breakpoint: 600,
+      breakpoint: 700,
       settings: {
         slidesToShow: 4,
         slidesToScroll: 1,
       },
     },
     {
-      breakpoint: 480,
+      breakpoint: 540,
       settings: {
         slidesToShow: 3,
         slidesToScroll: 1,

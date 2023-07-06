@@ -1,10 +1,12 @@
 import {Component} from 'react'
+import Loader from 'react-loader-spinner'
 import {format} from 'date-fns'
 
 import Cookies from 'js-cookie'
 import Header from '../Header'
 import MoviesCard from '../MoviesCard'
 import Footer from '../Footer'
+import FailureView from '../FailureView'
 
 import './index.css'
 
@@ -18,13 +20,21 @@ const apiStatusConstants = {
 const GenreList = props => {
   const {eachItem} = props
   const {name} = eachItem
-  return <li>{name}</li>
+  return (
+    <li>
+      <p className="paragraph">{name}</p>
+    </li>
+  )
 }
 
 const Languages = props => {
   const {eachItem} = props
   const {englishName} = eachItem
-  return <li>{englishName}</li>
+  return (
+    <li>
+      <p className="paragraph">{englishName}</p>
+    </li>
+  )
 }
 
 class MovieDetails extends Component {
@@ -38,7 +48,7 @@ class MovieDetails extends Component {
   }
 
   getMovieDetails = async () => {
-    // this.setState({renderStatus: renderConstraints.inProgress})
+    this.setState({status: apiStatusConstants.inProgress})
     const jwtToken = Cookies.get('jwt_token')
     const {match} = this.props
     const {params} = match
@@ -96,7 +106,7 @@ class MovieDetails extends Component {
 
   renderMovieSuccessView = () => {
     const {moviesDetailsList} = this.state
-    console.log(moviesDetailsList)
+    // console.log(moviesDetailsList)
     const {
       adult,
       backdropPath,
@@ -136,7 +146,7 @@ class MovieDetails extends Component {
                 <p className="format border">{certificate}</p>
                 <p className="format">{releasedYear}</p>
               </div>
-              <p className="overView">{overview}</p>
+              <p className="overView-m">{overview}</p>
               <button type="button" className="play-btn">
                 Play
               </button>
@@ -184,6 +194,14 @@ class MovieDetails extends Component {
       </div>
     )
   }
+
+  renderLoadingView = () => (
+    <div className="movie-load-container" testid="loader">
+      <Loader type="TailSpin" color="#D81F26" height={50} width={50} />
+    </div>
+  )
+
+  renderFailureView = () => <FailureView onRetry={this.getMovieDetails} />
 
   renderMoviesDetails = () => {
     const {status} = this.state

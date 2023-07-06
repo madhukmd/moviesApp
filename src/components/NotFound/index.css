@@ -22,6 +22,7 @@
   font-weight: 500;
   line-height: normal;
   margin-bottom: 30px;
+  width: 90%;
 }
 .go-to-home {
   display: flex;
@@ -35,4 +36,17 @@
   font-weight: 600;
   line-height: 24px;
   margin: 30px;
+}
+@media screen and (max-width: 576px) {
+  .notFound-heading {
+    font-size: 40px;
+
+    font-weight: 600;
+  }
+  .notFound-description {
+    font-size: 20px;
+  }
+  .go-to-home {
+    padding: 8px 18px;
+  }
 }

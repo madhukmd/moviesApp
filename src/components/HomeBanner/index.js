@@ -39,7 +39,7 @@ class HomeBanner extends Component {
         <Header />
         <div className="content-container">
           <div className="description-container">
-            <h1 className="title">{title}</h1>
+            <h1 className="title-head">{title}</h1>
             <h1 className="over-view">{overview}</h1>
             <button type="button" className="play-button">
               Play

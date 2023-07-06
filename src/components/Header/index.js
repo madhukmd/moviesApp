@@ -1,5 +1,5 @@
 import {Component} from 'react'
-import {Link, withRouter} from 'react-router-dom'
+import {Link} from 'react-router-dom'
 import {HiOutlineSearch} from 'react-icons/hi'
 import {MdMenuOpen} from 'react-icons/md'
 import {ImCross} from 'react-icons/im'
@@ -42,11 +42,13 @@ class Header extends Component {
       <nav className="nav-container">
         <div className="nav-link-desk-container">
           <div className="img-links-container">
-            <img
-              src="https://res.cloudinary.com/dtpjzzexl/image/upload/v1688307049/Group_7399_gtyxb6.png"
-              alt="login website logo"
-              className="header-logo"
-            />
+            <Link to="/">
+              <img
+                src="https://res.cloudinary.com/dtpjzzexl/image/upload/v1688307049/Group_7399_gtyxb6.png"
+                alt="website logo"
+                className="header-logo"
+              />
+            </Link>
             <ul className="links">
               <Link to="/" className="nav-link">
                 <li className="link-heading">Home</li>
@@ -69,6 +71,7 @@ class Header extends Component {
               <Link to="/search">
                 <button
                   type="button"
+                  testid="searchButton"
                   className={`input-icon ${add}`}
                   onClick={this.enterEvent}
                 >
@@ -101,7 +104,7 @@ class Header extends Component {
               <Link to="/popular" className="nav-link">
                 <li>Popular</li>
               </Link>
-              <Link to="/account">
+              <Link to="/account" className="nav-link">
                 <li>Account</li>
               </Link>
               <button type="button" className="cross-button">
@@ -118,4 +121,4 @@ class Header extends Component {
     )
   }
 }
-export default withRouter(Header)
+export default Header

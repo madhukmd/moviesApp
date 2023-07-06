@@ -1,13 +1,11 @@
 import './index.css'
-import Header from '../Header'
 
 const FailureView = props => {
   const {onRetry} = props
   const getdata = () => onRetry()
 
   return (
-    <>
-      <Header />
+    <div className="bg">
       <div className="failure-view">
         <img
           className="failure-img"
@@ -19,7 +17,7 @@ const FailureView = props => {
           Try Again
         </button>
       </div>
-    </>
+    </div>
   )
 }
 

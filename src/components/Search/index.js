@@ -90,11 +90,11 @@ class Search extends Component {
     )
   }
 
-  onRetry = () => {
+  onRetryResults = () => {
     this.getMovies()
   }
 
-  renderFailureView = () => <FailureView onRetry={this.onRetry} />
+  renderFailureView = () => <FailureView onRetry={this.onRetryResults} />
 
   renderMovies = () => {
     const {status} = this.state

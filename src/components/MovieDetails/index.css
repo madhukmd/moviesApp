@@ -30,6 +30,13 @@
   line-height: normal;
   margin-bottom: 0;
 }
+
+@media screen and (max-width: 576px) {
+  .movie-heading {
+    font-size: 30px;
+    font-weight: 500;
+  }
+}
 .more-details {
   display: flex;
   align-items: center;
@@ -55,13 +62,23 @@
   align-items: center;
   justify-content: center;
 }
-.overView {
+.overView-m {
   color: #fff;
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
   line-height: 26px;
   max-width: 600px;
+}
+@media screen and (max-width: 576px) {
+  .overView-m {
+    font-size: 19px;
+  }
+}
+
+.paragraph {
+  margin: 0;
+  padding: 0;
 }
 .play-btn {
   display: flex;
@@ -71,11 +88,17 @@
   gap: 8px;
   color: #171f46;
   font-size: 14px;
-
   font-style: normal;
   font-weight: 900;
   line-height: 24px;
 }
+
+@media screen and (max-width: 576px) {
+  .play-btn {
+    padding: 6px 20px;
+  }
+}
+
 .information {
   display: flex;
   justify-content: space-between;
@@ -138,5 +161,12 @@
   margin: auto;
 }
 .similar {
+  background-color: #131313;
+}
+.movie-load-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
   background-color: #131313;
 }

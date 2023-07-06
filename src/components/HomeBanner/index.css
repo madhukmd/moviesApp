@@ -9,7 +9,9 @@
     #131313 108.61%
   );
 }
-
+* {
+  /* border: 1px solid orange; */
+}
 .description-container {
   width: 90%;
   max-width: 1020px;
@@ -19,13 +21,12 @@
   align-items: flex-start;
 }
 
-.title {
+.title-head {
   color: #fff;
   font-size: 64px;
   font-style: normal;
   font-weight: 600;
   line-height: 62px;
-  margin: 5px;
   margin-bottom: 10px;
 }
 .over-view {
@@ -56,4 +57,27 @@
   line-height: 24px;
   margin-top: 30px;
   cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  .title-head {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 50px;
+  }
+  .over-view {
+    font-size: 19px;
+    width: 80%;
+  }
+  .play-button {
+    display: flex;
+    padding: 6px 18px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    margin-top: 20px;
+  }
 }

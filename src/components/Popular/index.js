@@ -5,6 +5,7 @@ import Loader from 'react-loader-spinner'
 import MoviesCard from '../MoviesCard'
 import Header from '../Header'
 import FailureView from '../FailureView'
+import Footer from '../Footer'
 
 import './index.css'
 
@@ -94,6 +95,7 @@ class Popular extends Component {
       <div className="Search-container">
         <Header />
         {this.renderPopular()}
+        <Footer />
       </div>
     )
   }
