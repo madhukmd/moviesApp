@@ -59,7 +59,6 @@ class Toprated extends Component {
     const {topratedList} = this.state
     return (
       <div className="slick-container">
-        <h1 className="all-heading">Top Rated</h1>
         <SlickCard trends={topratedList} />
       </div>
     )

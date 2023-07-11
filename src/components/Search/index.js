@@ -21,6 +21,9 @@ class Search extends Component {
     status: apiStatusConstants.initial,
     moviesList: [],
     inputSearch: '',
+    start: 1,
+    showLimit: 12,
+    startInd: 0,
   }
 
   onSearchChange = text => {
@@ -61,14 +64,53 @@ class Search extends Component {
     </div>
   )
 
+  prevLimit = () => {
+    const {start} = this.state
+    if (start > 1) {
+      this.setState(prev => ({
+        start: prev.start - 1,
+        startInd: prev.startInd - 12,
+      }))
+    }
+  }
+
+  nextLimit = limit => {
+    const {start} = this.state
+    if (start < limit) {
+      this.setState(prev => ({
+        start: prev.start + 1,
+        startInd: prev.startInd + 12,
+      }))
+    }
+  }
+
   renderMoviesList = () => {
-    const {moviesList} = this.state
+    const {moviesList, start, startInd, showLimit} = this.state
+    const limit = Math.ceil(moviesList.length / 12)
+    const searchData = moviesList.slice(startInd, start * showLimit)
     return moviesList.length > 0 ? (
-      <ul className="search-movies-container">
-        {moviesList.map(eachMovie => (
-          <MoviesCard key={eachMovie.id} eachMovie={eachMovie} />
-        ))}
-      </ul>
+      <>
+        <ul className="search-movies-container">
+          {searchData.map(eachMovie => (
+            <MoviesCard key={eachMovie.id} eachMovie={eachMovie} />
+          ))}
+        </ul>
+        <div className="pagination-container">
+          <img
+            src="https://res.cloudinary.com/dtpjzzexl/image/upload/v1688653171/Icon_qxzjqs.png"
+            alt="prev"
+            onClick={this.prevLimit}
+          />
+          <p className="pages">
+            {start} of {limit}
+          </p>
+          <img
+            src="https://res.cloudinary.com/dtpjzzexl/image/upload/v1688653253/Icon_brqgzc.png"
+            alt="next"
+            onClick={() => this.nextLimit(limit)}
+          />
+        </div>
+      </>
     ) : (
       this.renderNoResultsView()
     )
@@ -91,7 +133,7 @@ class Search extends Component {
   }
 
   onRetryResults = () => {
-    this.getMovies()
+    this.getMovies('venom')
   }
 
   renderFailureView = () => <FailureView onRetry={this.onRetryResults} />

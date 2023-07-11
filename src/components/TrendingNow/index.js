@@ -59,7 +59,6 @@ class TrendingNow extends Component {
     const {trendingList} = this.state
     return (
       <div className="slick-container">
-        <h1 className="all-heading">Trending Now</h1>
         <SlickCard trends={trendingList} />
       </div>
     )

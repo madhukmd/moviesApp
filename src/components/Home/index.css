@@ -26,6 +26,13 @@
   margin-top: 25px;
   margin-bottom: 10px;
   padding-left: 12px;
+  width: 90%;
+  max-width: 1085px;
+  margin: auto;
+  padding-left: 20px;
+  padding-right: 27px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 @media screen (max-width: 768px) {
   .all-heading {

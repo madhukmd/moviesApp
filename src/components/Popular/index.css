@@ -7,6 +7,17 @@
   background-color: #131313;
   min-height: 100vh;
 }
+
+.pagination-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.pages {
+  color: #cbd5e1;
+}
+
 .load-container {
   display: flex;
   justify-content: center;
